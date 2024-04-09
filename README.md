@@ -2,10 +2,11 @@
 # __Websocket Connection__
 
 ## __Note__:
-Please see the v1 project at [here](https://github.com/projecting123/websocket-v1) where you'll know the all about websocket.
+Please see the v1 project [here](https://github.com/projecting123/websocket-v1) where you'll know the all about websocket.
 
 This is different from the v1 because here we've establishment websocket server on the same http server from where
 our html, css and javascript files are being served.
+
 ## __Code Example:__
 In server:
 ```js
@@ -64,4 +65,9 @@ socket.addEventListener("error", (event) => {
 socket.addEventListener('message', (event) => {
     console.log(event.data);
 })
+```
+
+## __Required Package__:
+```js
+npm i express ws
 ```
