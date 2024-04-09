@@ -11,5 +11,5 @@ socket.addEventListener("error", (event) => {
 });
 
 socket.addEventListener('message', (event) => {
-    event.data == 'reload' && location.reload();
+  console.log(event.data);
 })
